@@ -30,7 +30,7 @@ def main():
     user = 'root'
     password='toor'
     child = connect(user, host, password)
-    send_command(child,'whoami')
+    send_command(child,'cat /etc/shadow | grep root')
 
 if __name__ == '__main__':
     main()
